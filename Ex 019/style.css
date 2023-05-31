@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body{
+    background-color: #000000;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+
+h1{
+    color: rgb(255, 123, 0);
+}
+h1#principal{
+    color: blueviolet;
+    text-align: center;
+}
+
+h2{
+    color:beige;
+}
+p{
+
+    color: beige;
+    width: 600px;
+    margin: left;
+    padding: 10px;
+}
+.basico{
+    color: rgb(43, 55, 226);
+}
+.intermediario{
+    color: rgb(43, 226, 43);
+}
+.avancado{
+    color: rgb(25, 201, 148);
+}

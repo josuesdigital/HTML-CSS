@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+<h1>Imagens dinâmicas</h1>
+    <p>Para que apareça imagens com tamanhos diferentes apra dispositivos com tamanhos de telas diferentes, é preciso usar o código a seguir, entre a função %lt
+        picture&gt;
+    </p>
+    <p><code>&lt;source media="(max-width:000px)" srcset="imagens/foto-p.png"</code></p>
+    <p>Aonde o "imagens/foto-p.png" é o nome da imagem e o 00px é o tamanho que você quer a quebra.
+        Importante destacar que tem que fazer um desses para cada imagem e cada ponto de quebra
+    </p>
+    <picture>
+        <source media="(max-width:657px)" srcset="imagens/Group-1.jpg" type="image/jpg">
+        <source media="(max-width:1331px)" srcset="imagens/Group-2.jpg" type="image/jpg">
+        <img src="Imagens/Group-3.jpg" alt="Imagem grande">
+    </picture>
+
+<h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir áudio</p>
+    <p>A maneira mais fácil é com a tag &lt;audio&gt;, usar também o parametro &lt;controls, para aparecer os controles&gt;</p>
+    <audio src="midia/Short - Como sair do limbo emagrecimento.mp4" controls></audio>
+    <p>Porém nem sempre o navegador vai entender, por isso é interessante colocar mais de um tipo de arquivo(mp3,wav,ogg..)</p>
+    <p>É interessante colocar sempre o parametro "preload", que tem 3 opções: <abbr title="Não carrega nada do arquivo">None</abbr>, <abbr title="Carrega apenas os dados, como tempo e data">Metadata</abbr> e <abbr title="Carrega todo o arquivo">autoplay</abbr>. </p>
+    <P>Neste caso, o ideal é colocar none ou metadata, pois se for autoplay, o navegador só vai entender que o site carregou todo depois de carregar todo o arquivo.</P>
+
+</body>
+</html>
