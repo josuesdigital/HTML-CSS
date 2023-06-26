@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <h2>Começando com o mais simples de todos</h2>
+    <form action="cadastro.php" method="post"><!-- Esse action se refere ao link para enviar o formulário para algum lugar-->
+        <!--O "label" linka o nome com o campo do formulário.-->
+        <p><label for="iNome">Nome:</label> <input type="text" name="Nome" id="iNome"></p>
+        <p><label for="iE-mail">E-mail:</label> <input type="email" name="iE-mail" id="E-mail"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <h2>Métodos de envio de formulário</h2>
+    <p>Básicamente existem 2: GET E POST</p>
+    <p>O GET é o padrão, ele deixa aparecer na URL o que foi pesquisado, é usado pelo Google, por exemplo.</p>
+    <p>O metodo POST não deixa aparecer na URL, deve ser usado para formulários de LPs, por exemplo.</p>
+    <p>Porém ele não proteje, pois basta acessar o F12 que os dados estarão lá.</p>
+    <p>A criptografia real só ocorre com HTTPS, que não será ensinado no momento.</p>
+
+</body>
+</html>

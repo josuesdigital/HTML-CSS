@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulário</title>
+</head>
+<body>
+    <h1>Teste de formulários</h1>
+    <form action="cadastro.php" method="post">
+        <p><label for="iusu">Usuário</label>
+        <input type="text" name="Usu" id="iusu" required></p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="Sen" id="isen">
+        </p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+        <h2>Anotações</h2>
+        <p>Para que o campo sejá obrigatório, usar required(exemplo neste HTML)</p>
+        <p>Para númerto minimo ou máximo, usar minlength ou maxlength</p>
+
+        <p>
+            Pode usar a opção placeholder para incluir coisas dentro das caixas
+        </p>
+        <p>A função autocomplete(on ou off) pode ser usada para bloquear ou permitir que apareça as opções de auto completar dos navegadores</p>
+        <p>Usando dentro de cada input, é possível dizer para que serve aquela caixa(nome, e-mail, organização, telefone...) e assim deixar o navegador mais acertivo na hora de oferecer opções para o usuário.</p>
+
+    </form>
+</body>
+</html>

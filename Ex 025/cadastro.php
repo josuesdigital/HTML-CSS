@@ -1,0 +1,1 @@
+Seu cadastro foi enviado, aprenda para PHP para saber o que fazer com eles.
