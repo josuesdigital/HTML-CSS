@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Radio e Checkbox</h1>
+    <p>Radio é para marcar apenas uma opção (Masc ou Fem) e checkbox é uma ou mais opção (Futebol, Tênis, basquete...)</p>
+    <h2>Nomenclaturas</h2>
+    <p>Fieldset: Deixa tudo o que está dentro de uma caixa com nome</p>
+    <p>Legend: É o comando para incluir o nome no Fieldset</p>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" value="M">
+            <label for="isxmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isxfem" value="F">
+            <label for="isxfem">Feminino</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Esporte(s) favorito(s)</legend>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas"> Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut"> Futebol</label><br>
+            <input type="checkbox" name="esten" id="iesten">
+            <label for="iesten">Tênis</label><br>
+        </fieldset>
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar"></p>
+    </form>
+
+
+    <h3> + Dicas</h3>
+    <p>Checked: Deixa já a opção marcada</p>
+    <p>Value: Coloca um nome para que o PHP pegue depois</p>
+
+</body>
+</html>
