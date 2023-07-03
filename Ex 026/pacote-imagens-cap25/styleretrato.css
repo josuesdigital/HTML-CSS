@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(imagens/cev-portrait.jpg);
+    background-size: contain;
+    width: 100vw;
+    height: 96vh;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
